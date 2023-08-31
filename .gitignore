@@ -24,7 +24,7 @@ venv/
 *.log
 
 settings.json
-settings.yaml
+#settings.yaml
 notification.mp3
 img_bot*
 img_me*

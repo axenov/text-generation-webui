@@ -549,6 +549,8 @@ def stream_completions(body: dict, is_legacy: bool = False):
                 prompt = encoder.decode(prompt)
             except KeyError:
                 prompt = decode(prompt)[0]
+        elif prompt and isinstance(prompt[0], str):
+            prompt = prompt[0]
         else:
             raise InvalidRequestError(message="API Batched generation not yet supported.", param=prompt_str)
 
