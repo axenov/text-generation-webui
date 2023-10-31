@@ -19,7 +19,7 @@ default_req_params = {
     # 'n' : default(body, 'n', 1),  # 'n' doesn't have a direct map
     'truncation_length': 2048,  # first use shared.settings value
     'add_bos_token': True,
-    'do_sample': True,
+    'do_sample': False,
     'typical_p': 1.0,
     'epsilon_cutoff': 0.0,  # In units of 1e-4
     'eta_cutoff': 0.0,  # In units of 1e-4
